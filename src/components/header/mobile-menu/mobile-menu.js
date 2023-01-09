@@ -1,11 +1,11 @@
 import React from "react";
 import "./mobile-menu.css";
 
-const MobileMenu = () => {
+const MobileMenu = ({ handleMenu }) => {
   return (
-    <div class="mobile-bar visible-sm visible-xs">
-      <div class="hamburger-menu">
-        <div class="bar"></div>
+    <div className="mobile-bar visible-sm visible-xs" onClick={handleMenu}>
+      <div className="hamburger-menu">
+        <div className="bar"></div>
       </div>
     </div>
   );
